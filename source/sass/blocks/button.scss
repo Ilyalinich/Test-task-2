@@ -1,0 +1,13 @@
+.button {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+
+  padding: 9px 18px;
+
+  font-weight: 500;
+
+  background-color: $color-basic-black;
+  border-radius: 120px;
+  color: $color-basic-white;
+}

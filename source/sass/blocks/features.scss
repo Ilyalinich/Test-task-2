@@ -1,0 +1,36 @@
+.features {
+  max-width: 1152px;
+  margin: 0 auto 60px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.features__list {
+  display: flex;
+  // justify-content: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  display: flex;
+  gap: 16px;
+
+  align-items: center;
+
+  padding: 0 40px;
+
+  font-weight: 300;
+
+  width: 288px;
+  min-height: 57px;
+  box-sizing: border-box;
+
+  border-right: 1px solid $color-soft-grey;
+}
+
+.features__item:last-of-type {
+  border: none;
+}

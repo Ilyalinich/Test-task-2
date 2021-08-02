@@ -1,0 +1,35 @@
+.banner {
+  width: 1200px;
+  min-height: 315px;
+
+  margin-bottom: 60px;
+
+  background-image: url("../img/presentation-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-hard-grey;
+}
+
+.banner__info {
+  margin-left: auto;
+  padding: 64px 70px 42px;
+
+  width: 480px;
+  min-height: 315px;
+  box-sizing: border-box;
+
+  background-color: $color-basic-red;
+  color: $color-basic-white;
+}
+
+.banner__slogan {
+  margin: 0 0 6px;
+
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 46px;
+}
+
+.banner__description {
+  margin: 0 0 30px;
+}

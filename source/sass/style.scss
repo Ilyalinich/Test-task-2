@@ -1,0 +1,21 @@
+//Normalize
+
+@import "normalize.scss";
+
+// Global
+
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+//Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/content-wrapper.scss";
+@import "blocks/company-info-nav.scss";
+@import "blocks/products-pages-nav.scss";
+@import "blocks/banner.scss";
+@import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/gallery.scss";
