@@ -3,11 +3,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  height: 1165px;
+  gap: 15px;
 
+  height: 1165px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -17,37 +18,45 @@
   justify-content: flex-end;
   align-items: center;
 
+  width: 390px;
   padding: 20px;
   box-sizing: border-box;
 
-  width: 390px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $color-hard-grey;
+  background-size: cover;
 }
 
 
 .gallery__item--wardrobe {
   height: 450px;
+  margin-top: -27px;
+
   background-image: url("../img/wardrobe.jpg");
 }
 
 .gallery__item--textiles {
   height: 450px;
+
   background-image: url("../img/textiles.jpg");
 }
 
 .gallery__item--bathroom {
   height: 700px;
+
   background-image: url("../img/bathroom.jpg");
 }
 
 .gallery__item--all {
   height: 450px;
+
   background-image: url("../img/all-products.jpg");
 }
 
 .gallery__item--kitchen {
   height: 700px;
+  margin-top: -42px;
+
   background-image: url("../img/kitchen.jpg");
 }

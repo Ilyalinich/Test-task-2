@@ -4,8 +4,13 @@
     <meta charset="utf-8">
     <meta name="description" content="Магазин товаров">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Store main-page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Store</title>
+    <link rel="preload" href="img/presentation-banner.jpg" as="image">
+    <link rel="preload" href="fonts/inter-v3-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v3-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v3-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v3-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page__body">
@@ -14,58 +19,26 @@
         <div class="content-wrapper">
           <nav class="company-info-nav">
             <ul class="company-info-nav__list">
-              <li class="company-info-nav__item">
-                <a href="#">
-                  <span class="company-info-nav__text">О компании</span>
-                </a>
-              </li>
-              <li class="company-info-nav__item">
-                <a href="#">
-                  <span class="company-info-nav__text">Блог</span>
-                </a>
-              </li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Блог</a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="page-header__bottom-container">
         <div class="content-wrapper">
-          <nav class="products-pages-nav">
-            <a href="#">
+          <nav class="main-nav">
+            <a href="#" class="main-nav__logo">
               <img src="img/logo.svg" width="172" height="27" alt="Логотип сайта Home One">
             </a>
-            <ul class="products-pages-nav__list">
-              <li class="products-pages-nav__item">
-                <a href="#">
-                  <span class="products-pages-nav__text">Все товары</span>
-                </a>
-              </li>
-              <li class="products-pages-nav__item">
-                <a href="#">
-                  <span class="products-pages-nav__text">Текстиль для дома</span>
-                </a>
-              </li>
-              <li class="products-pages-nav__item">
-                <a href="#">
-                  <span class="products-pages-nav__text">Хранение и порядок</span>
-                </a>
-              </li>
-              <li class="products-pages-nav__item">
-                <a href="#">
-                  <span class="products-pages-nav__text">Кухня</span>
-                </a>
-              </li>
-              <li class="products-pages-nav__item">
-                <a href="#">
-                  <span class="products-pages-nav__text">Ванная</span>
-                </a>
-              </li>
-              <li class="products-pages-nav__item products-pages-nav__item--action">
-                <a href="#">
-                  <span class="products-pages-nav__text">Акции</span>
-                </a>
-              </li>
+            <ul class="main-nav__list">
+              <li><a href="#">Все товары</a></li>
+              <li><a href="#">Текстиль для дома</a></li>
+              <li><a href="#">Хранение и порядок</a></li>
+              <li><a href="#">Кухня</a></li>
+              <li><a href="#">Ванная</a></li>
             </ul>
+            <a href="#" class="main-nav__action-link">Акции</a>
           </nav>
         </div>
       </div>
@@ -78,14 +51,16 @@
         <section class="banner">
           <h2 class="visually-hidden">Приветственный баннер</h2>
           <div class="banner__info">
-            <p class="banner__slogan">Home One.<br>
+            <p class="banner__slogan">
+              Home One.<br>
               The best one
             </p>
-            <p class="banner__description">Товары для обустройства дома<br>
+            <p class="banner__description">
+              Товары для обустройства дома<br>
               Просто, понято, технологично
             </p>
             <a class="button" href="#">
-              <span>В каталог</span>
+              В каталог
               <svg aria-hidden="true" focusable="false" width="21" height="13">
                 <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
               </svg>
@@ -97,7 +72,7 @@
           <h2 class="visually-hidden">Блок преимуществ</h2>
           <ul class="features__list">
             <li class="features__item">
-              <svg aria-hidden="true" focusable="false" width="20" height="21">
+              <svg class="features__icon" aria-hidden="true" focusable="false" width="20" height="21">
                 <use xlink:href="img/sprite-icons/sprite.svg#house-icon"></use>
               </svg>
               <span>
@@ -105,7 +80,7 @@
               </span>
             </li>
             <li class="features__item">
-              <svg aria-hidden="true" focusable="false" width="18" height="17">
+              <svg class="features__icon" aria-hidden="true" focusable="false" width="18" height="17">
                 <use xlink:href="img/sprite-icons/sprite.svg#reviews-icon"></use>
               </svg>
               <span>
@@ -114,7 +89,7 @@
               </span>
             </li>
             <li class="features__item">
-              <svg aria-hidden="true" focusable="false" width="20" height="21">
+              <svg class="features__icon" aria-hidden="true" focusable="false" width="20" height="21">
                 <use xlink:href="img/sprite-icons/sprite.svg#good-icon"></use>
               </svg>
               <span>
@@ -122,7 +97,7 @@
               </span>
             </li>
             <li class="features__item">
-              <svg aria-hidden="true" focusable="false" width="20" height="20">
+              <svg class="features__icon" aria-hidden="true" focusable="false" width="20" height="20">
                 <use xlink:href="img/sprite-icons/sprite.svg#planet-icon"></use>
               </svg>
               <span>
@@ -137,7 +112,7 @@
           <ul class="gallery__list">
             <li class="gallery__item gallery__item--wardrobe">
               <a class="button" href="#">
-                <span class="gallery__text">Хранение и порядок</span>
+                Хранение и порядок
                 <svg aria-hidden="true" focusable="false" width="21" height="13">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
                 </svg>
@@ -145,7 +120,7 @@
             </li>
             <li class="gallery__item gallery__item--textiles">
               <a class="button" href="#">
-                <span class="gallery__text">Текстиль для дома</span>
+                Текстиль для дома
                 <svg aria-hidden="true" focusable="false" width="21" height="13">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
                 </svg>
@@ -153,7 +128,7 @@
             </li>
             <li class="gallery__item gallery__item--bathroom">
               <a class="button" href="#">
-                <span class="gallery__text">Ванная</span>
+                Ванная
                 <svg aria-hidden="true" focusable="false" width="21" height="13">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
                 </svg>
@@ -161,7 +136,7 @@
             </li>
             <li class="gallery__item gallery__item--all">
               <a class="button" href="#">
-                <span class="gallery__text">Все товары</span>
+                Все товары
                 <svg aria-hidden="true" focusable="false" width="21" height="13">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
                 </svg>
@@ -169,7 +144,7 @@
             </li>
             <li class="gallery__item gallery__item--kitchen">
               <a class="button" href="#">
-                <span class="gallery__text">Кухня</span>
+                Кухня
                 <svg aria-hidden="true" focusable="false" width="21" height="13">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-icon"></use>
                 </svg>

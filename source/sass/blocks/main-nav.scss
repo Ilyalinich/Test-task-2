@@ -1,0 +1,48 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav a {
+  color: $color-basic-black;
+}
+
+.main-nav__logo {
+  flex-shrink: 0;
+
+  margin: -3px 72px 0 0;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+
+  padding: 0;
+  margin: 0 36px 0 0;
+
+  list-style: none;
+}
+
+.main-nav__action-link {
+  position: relative;
+  align-self: start;
+
+  min-width: 92px;
+  padding-left: 50px;
+  box-sizing: border-box;
+
+  border-left: 1px solid $color-basic-grey;
+}
+
+.main-nav__action-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 37px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 5px;
+  background-color: $color-basic-red;
+}

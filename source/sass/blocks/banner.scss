@@ -1,21 +1,20 @@
 .banner {
   width: 1200px;
   min-height: 315px;
-
   margin-bottom: 60px;
 
   background-image: url("../img/presentation-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $color-hard-grey;
+  background-size: cover;
 }
 
 .banner__info {
-  margin-left: auto;
-  padding: 64px 70px 42px;
-
   width: 480px;
   min-height: 315px;
+  margin-left: auto;
+  padding: 64px 70px 42px;
   box-sizing: border-box;
 
   background-color: $color-basic-red;

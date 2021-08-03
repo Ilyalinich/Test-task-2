@@ -21,11 +21,12 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("source/css"))
     .pipe(postcss([
       autoprefixer(),
-      // csso()
+      csso()
     ]))
-    // .pipe(rename("style.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -37,7 +38,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 

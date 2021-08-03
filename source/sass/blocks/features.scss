@@ -7,7 +7,7 @@
 
 .features__list {
   display: flex;
-  // justify-content: center;
+  flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -17,20 +17,22 @@
 .features__item {
   display: flex;
   gap: 16px;
-
   align-items: center;
-
-  padding: 0 40px;
-
-  font-weight: 300;
 
   width: 288px;
   min-height: 57px;
+  padding: 0 40px;
   box-sizing: border-box;
+
+  font-weight: 300;
 
   border-right: 1px solid $color-soft-grey;
 }
 
-.features__item:last-of-type {
+.features__icon {
+  flex-shrink: 0;
+}
+
+.features__item:nth-child(4n) {
   border: none;
 }
